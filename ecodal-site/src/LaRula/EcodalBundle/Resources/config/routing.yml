@@ -1,0 +1,31 @@
+larula_ecodal_home:
+    pattern:  /
+    defaults: { _controller: LaRulaEcodalBundle:Default:index }
+
+larula_ecodal_project:
+    pattern:  /proyecto
+    defaults: { _controller: LaRulaEcodalBundle:Default:project }
+
+larula_ecodal_academic:
+    pattern:  /academico
+    defaults: { _controller: LaRulaEcodalBundle:Default:academic }
+
+larula_ecodal_tips:
+    pattern:  /tips
+    defaults: { _controller: LaRulaEcodalBundle:Default:tips }
+
+larula_ecodal_credencial:
+    pattern:  /credencial
+    defaults: { _controller: LaRulaEcodalBundle:Default:credential }
+
+larula_ecodal_contact:
+    pattern:  /contacto
+    defaults: { _controller: LaRulaEcodalBundle:Default:contact }
+
+larula_ecodal_dataset:
+    pattern:  /dataset
+    defaults: { _controller: LaRulaEcodalBundle:Default:dataset }
+
+larula_ecodal_contact_process:
+    pattern:  /contacto/procesar
+    defaults: { _controller: LaRulaEcodalBundle:Default:contactProcess }

@@ -1,0 +1,30 @@
+{% extends 'LaRulaEcodalBundle:Layout:layout.html.twig' %}
+
+{% block content %} 
+<div class="container">
+	<!-- Main component for a primary marketing message or call to action -->
+	<div id="index-jumbotron" class="jumbotron text-center">
+		<a href="http://juego.ecodal.com.ar:1337" target="_blank" id="btn-play">
+			JUGAR
+		</a>	
+	</div>
+</div>
+<script type="text/javascript">
+
+createjs.Sound.registerSound("/audio/bienvenida.mp3", "au-bienvenida");
+createjs.Sound.addEventListener("fileload", createjs.proxy(this.loadHandler, this));
+
+var intance = null;
+
+ function loadHandler(event) {
+
+     instance = createjs.Sound.createInstance("au-bienvenida"); 
+     instance.volume = 0.5;
+
+     $(document).ready(function(){
+     		instance.play();
+     });
+ }
+
+</script>
+{% endblock %}

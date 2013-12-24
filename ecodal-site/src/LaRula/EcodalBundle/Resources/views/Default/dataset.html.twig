@@ -1,0 +1,42 @@
+{% extends 'LaRulaEcodalBundle:Layout:layout.html.twig' %}
+
+{% block content %} 
+<div class="container">
+	<!-- Main component for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<h1 class="text-center"><span class="red">DATASET</span></h1>
+		<p>
+			¡Hola! Si estás aquí es porque estás interesado en tener toda la información sobre el cuidado del medio ambiente.<br>
+			A continuación encontrarás los formatos disponibles para realizar la descarga.<br>
+			Haz clic en el que necesites, guarda el archivo en tu pc o tableta y listo.<br> 
+		</p>
+		<br>
+		<div class="row">
+		  <div class="col-md-4">
+		  	<div class="alert alert-success tip-without-song tip">
+				<h3>Tips (CSV)</h3> 
+					Descargue los tips para el cuidado del medio ambiente en un archivo con format <strong>CSV</strong><br>
+					<br>					
+					<a href="/data/tips.csv" target="_blank" ><span class="glyphicon glyphicon-arrow-down small-circle white" ></span></a>
+			</div> 
+		  </div>
+		  <div class="col-md-4">
+			<div class="alert alert-success tip-without-song tip">
+				<h3>Tips (XLS)</h3> 
+					Descargue los tips para el cuidado del medio ambiente en un archivo con format <strong>XLS</strong><br>
+					<br>					
+					<a href="/data/tips.xls" target="_blank" ><span class="glyphicon glyphicon-arrow-down small-circle white" ></span></a>
+			</div> 		  	
+		  </div>
+		  <div class="col-md-4">
+			<div class="alert alert-danger tip-without-song tip">
+				<h3>Tips (PDF)</h3> 
+					Descargue los tips para el cuidado del medio ambiente en un archivo con format <strong>PDF</strong><br>
+					<br>					
+					<a href="/data/tips.pdf" target="_blank" ><span class="glyphicon glyphicon-arrow-down small-circle white" ></span></a>
+			</div> 	
+		  </div>
+		</div>
+	</div>
+</div> <!-- /container --> 
+{% endblock %}

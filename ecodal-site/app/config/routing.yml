@@ -1,0 +1,3 @@
+la_rula_ecodal:
+    resource: "@LaRulaEcodalBundle/Resources/config/routing.yml"
+    prefix:   /

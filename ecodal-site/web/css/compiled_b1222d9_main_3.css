@@ -1,0 +1,61 @@
+body {background: url(/img/index.png) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+h1{font-family: Ranchers;font-size: 50px !important; margin-top: 5px; margin-bottom: 30px;}
+p{font-size: 16px;}
+.btn-sound{position:absolute;left:1170px;top:100px;}
+.subtitle{font-size:32px; display:block; margin-top:5px;}
+.small-circle{font-size:20px;width:40px; height:40px; border-radius: 100px; border:4px solid #ccc; cursor:pointer; line-height: 30px}
+.small-circle:hover{border:4px solid #d9534f;}
+.circle{display:block;width:200px;height:200px;border-radius:100px;border:4px double #ccc;font-size:40px;line-height:170px;text-align:center;text-decoration:none;text-shadow:0 1px 0 #fff;}
+.circle:hover{border:4px double;text-decoration:none;background:#4cae4c;}
+.tbl-select-avatar{margin:auto;width:540px;}
+.tbl-select-avatar td{width:270px;text-align:center;}
+.img-avatar{width:230px;}
+.jumbotron{border:6px solid #fff; text-align: center; font-size: 16px; padding-top: 20px;}
+#index-jumbotron{ 
+margin:0 auto;
+padding:0 !important;
+background-color:rgba(255,255,255,0); 
+width: 300px; 
+min-height:350px;
+border:0;
+}
+
+.active{background-color:#4cae4c !important;}
+.navbar{border:1px solid #aaa;}
+.red{color:#d9534f;}
+.green{color:#5cb85c;}
+.blue{color:#428bca;}
+.yellow{color:#f0ad4e;}
+.grey{color:#666;}
+.tip{border-left: 5px; font-size: 12px; min-height:270px; margin:17px;}
+.tip h3{margin-top: 0px;}
+#btn-play{  
+position: fixed;
+font-family: Ranchers;
+letter-spacing: 2px;
+display:inline-block;  
+text-align:center;  
+text-decoration: none;  
+color: white;  
+background:#b72d23;  
+margin: 0 auto;  
+width:200px;  
+height:200px;  
+border-radius: 400px; /*really large border radius to create round borders*/  
+-moz-border-radius: 400px;  
+-webkit-border-radius: 400px;  
+cursor:pointer;
+font-size: 46px;
+font-weight: bold;
+padding:0 auto;
+padding-top:42px;
+top:58%;
+margin-left: -105px;
+border: 3px solid #fff;
+} 
+
+#btn-play:hover{
+	border: 6px solid #fff;
+}
+.navbar-brand{margin-right: 10px;}
+.navbar-brand img{width: 50px;}

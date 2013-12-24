@@ -1,0 +1,38 @@
+<!-- Static navbar -->
+<div class="navbar navbar-default navbar-static-top">
+	<div class="container">
+		<a class="navbar-brand" href="{{ url('larula_ecodal_home') }}" style="padding:0;" ><img src="{{ asset('/img/logo-ecodal.png') }}"></a>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul id="nav-main" class="nav navbar-nav">
+				<!--li class="{% if pageHome is defined %}active{% endif %}">
+					<a href="{{ url('larula_ecodal_home') }}"><span class="glyphicon glyphicon-home"></span><span><strong>&nbsp;Inicio</strong></span></a>
+				</li-->
+				<li class="{% if pageProject is defined %}active{% endif %}">
+					<a href="{{ url('larula_ecodal_project') }}"><span class="glyphicon glyphicon-bullhorn green"></span><span><strong>&nbsp;ECODAL</strong></span></a>
+				</li>
+				<li class="{% if pageTips is defined %}active{% endif %}">
+					<a href="{{ url('larula_ecodal_tips') }}"><span class="glyphicon glyphicon-ok blue"></span><span><strong>&nbsp;EcoTips</strong></span></a>
+				</li>
+				<li class="{% if pageAcademic is defined %}active{% endif %}">
+					<a href="{{ url('larula_ecodal_academic') }}"><span class="glyphicon glyphicon-book yellow"></span><span><strong>&nbsp;EcoEscolar</strong></span></a>
+				</li>
+				<li class="{% if pageDataset is defined %}active{% endif %}">
+					<a href="{{ url('larula_ecodal_dataset') }}"><span class="glyphicon glyphicon-list-alt red"></span><span><strong>&nbsp;EcoDataSet</strong></span></a>
+				</li>
+				<!--li class="{% if pageCredential is defined %}active{% endif %}">
+					<a href="{{ url('larula_ecodal_credencial') }}"><span class="glyphicon glyphicon-credit-card red"></span><span><strong>&nbsp;ECO Datos</strong></span></a>
+				</li-->
+				<!--li class="{% if pageContact is defined %}active{% endif %}">
+					<a href="{{ url('larula_ecodal_contact') }}"><span class="glyphicon glyphicon-earphone red"></span><span><strong>&nbsp;Contáctanos</strong></span></a>
+				</li-->
+			</ul>
+		</div>
+	</div>
+</div>

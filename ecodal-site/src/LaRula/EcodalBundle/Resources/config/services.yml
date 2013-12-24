@@ -1,0 +1,7 @@
+parameters:
+#    la_rula_ecodal.example.class: LaRula\EcodalBundle\Example
+
+services:
+#    la_rula_ecodal.example:
+#        class: %la_rula_ecodal.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

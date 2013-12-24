@@ -1,0 +1,224 @@
+body, html {
+    height: 100%;
+}
+
+body {
+
+}
+
+.circle {
+    margin: 0 auto;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color: #fff !important;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 5px solid #fff;
+    font-size: 26px;
+    line-height: 59px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.circle a {
+    color: #fff !important;
+}
+
+.circle-home {
+    border-radius: 30px;
+    float: left;
+    height: 90px;
+    line-height: 53px;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    margin-right: 1px;
+}
+
+.circle-user {
+    /*border-radius:75px;*/
+    height: 140px; /*line-height:145px;width:150px;*/
+}
+
+.circle:hover {
+    text-decoration: none;
+}
+
+.bg-green {
+    background-color: #5cb85c;
+}
+
+.bg-green:hover {
+    background-color: #4cae4c;
+}
+
+.bg-blue {
+    background-color: #428bca;
+}
+
+.bg-blue:hover {
+    background-color: #357ebd;
+}
+
+.bg-red {
+    background-color: #d9534f;
+}
+
+.bg-red:hover {
+    background-color: #ac2925;
+}
+
+.progress {
+    width: 85px !important;
+    height: 10px;
+    margin: 0 auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid #eee;
+}
+
+.progress-label {
+    font-size: 12px;
+    margin: 1px;
+    margin-left: 5px;
+    color: #000;
+}
+
+/* Home */
+#home-container {
+    clear: fixed;
+    margin-top: 2px;
+}
+
+#home-container p {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.label-home-text{
+    margin-right:20px !important;
+}
+
+p {
+margin: 0 0 0px;
+}
+
+.label-home-vitality{
+    margin-left: 10px;
+}
+
+.home-progress {
+    width: 165px !important;
+    height: 30px;
+}
+
+.label-home-vitality {
+    font-size: 12px;
+}
+
+/* User */
+#user-container {
+    float: left;
+    margin-left: 11px;
+    margin-right: 0px
+}
+
+#user-info-container {
+    clear: fixed;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    height: 100px;
+}
+
+/* Insignias */
+#insignia-container {
+    margin: 0 auto;
+    padding-top: 31px !important;
+}
+
+.insignia-row {
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.label-insignia {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.control-panel {
+    background-color: rgba(255, 197, 42, 0.8);
+    border-radius: 8px;
+    border: 2px solid #fff;
+    height: 560px !important;
+}
+
+#gma_container {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+}
+
+.gma_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#avatar-selected {
+    display: none;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 640px;
+    min-width: 950px;
+}
+
+#house {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#house-background {
+    position: absolute;
+    top: -207px;
+    left: -139px;
+}
+
+#background {
+    position: absolute;
+    margin-top: -135px;
+    top: 0px;
+    left: 0px;
+}
+
+#bar {
+    position: absolute;
+    top: 0px;
+    left: 745px;
+    width: 200px;
+}
+
+.tbl-select-avatar {
+    margin: auto;
+    width: 540px;
+}
+
+.tbl-select-avatar td {
+    width: 270px;
+    text-align: center;
+}
+
+.img-avatar {
+    width: 230px;
+}
