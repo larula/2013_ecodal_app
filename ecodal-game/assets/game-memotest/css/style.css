@@ -1,0 +1,38 @@
+#memotest {
+    background: url(../imagenes/memotest-bg.jpg) no-repeat;
+    width:920px;
+    height: 560px
+}
+
+#memotest #mesa {
+    margin:0 auto;
+    margin-top:171px;
+    margin-left:60px;
+    width: 850px;
+    height: 560px;
+    overflow: hidden;
+}
+#memotest #mesa .memotest_cartas {
+    list-style: none;
+    float: left;
+    margin: 0px 20px 20px 0px;
+    width: 100px;
+    height: 160px;
+    display: block;
+    cursor: pointer;
+}
+#memotest #mesa .memotest_fin_juego {
+    font-size: 16px;
+}
+#memotest #mesa .memotest_jugar_de_nuevo {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+#memotest #mesa .memotest_jugar_de_nuevo {
+    text-decoration: underline;
+}
+
+#memotest .clear {
+    clear: both;
+}

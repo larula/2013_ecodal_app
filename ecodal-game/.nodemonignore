@@ -1,0 +1,6 @@
+.tmp/*
+.idea/*
+docs/*
+.git
+.gitignore
+atlassian-ide-plugin.xml

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" href="css/style.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="js/memotest.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('#jugar').on('click', function(){
+                    $("#memotest #mesa").memotest('imagenes/7.png', new Array(
+                        'imagenes/1.png',
+                        'imagenes/2.png',
+                        'imagenes/3.png',
+                        'imagenes/4.png',
+                        'imagenes/5.png',
+                        'imagenes/6.png'
+                    ));
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <button id="jugar">Comenzar</button>
+        <div id="memotest">
+        <div id="mesa"></div>
+        <div class="clear"></div>        
+        </div>
+
+    </body>
+</html>

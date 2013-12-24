@@ -1,0 +1,69 @@
+#tunner-content #tunnel {
+      background:#444 url(../imagenes/tunnel-bg.jpg) 50% 0;
+      border:1px solid #fafafa;
+      cursor:crosshair;
+      height:520px;
+      margin:40px auto 20px;
+      position:relative;
+      width:800px;
+    }
+#tunner-content #info { 
+      margin:0 auto 20px;
+      width:500px;
+      text-align:right;
+    }
+#tunner-content #info_score {
+      float:left;
+    }
+#tunner-content #ship {
+      position:absolute;
+      top:350px;
+      left:334px;
+    }
+#tunner-content .left_wall {
+      display:none;
+      position:absolute;
+      top:0;
+      left:80px;
+    }
+#tunner-content .right_wall {
+      display:none;
+      position:absolute;
+      top:0;
+      left:400px;
+    }
+#tunner-content .display, .message {
+      background:#222;
+      color:#fafafa;
+      cursor:pointer;cursor:hand;
+      display:none;
+      font-weight:bold;
+      text-align:center;
+      text-transform:uppercase;
+      width:100%;
+      z-index:3;
+    }
+#tunner-content .display {
+      line-height:1.4;
+      padding:14px 0;
+      margin-top:28px;
+    }
+#tunner-content .message {
+      line-height:2.0;
+      position:absolute;
+      top:50%;
+      margin-top:-16px;   
+    }
+#tunner-content #welcome {
+      z-index:4;
+    }
+#tunner-content #game_over {
+      padding-top:14px;
+      z-index:5;
+    }
+#tunner-content #score_table {
+      z-index:4;
+    }
+#tunner-content #high_score {
+      cursor:default;
+    }

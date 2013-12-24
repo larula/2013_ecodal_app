@@ -1,0 +1,233 @@
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="/images/logo-ecodal.png"></a>
+    </div>
+
+    <ul class="nav navbar-nav">
+        <li>
+            <a href="#" data-toggle="popover" id="link-ranking">
+                <span class="glyphicon glyphicon-list"></span> Ranking
+            </a>
+        </li>
+        <li><a href="http://ecodal.com.ar/tips" target="_blank">
+                <span class="glyphicon glyphicon-ok"></span> Tips</a></li>
+        <li>
+            <a href="#" data-toggle="popover" id="link-ecodni">
+                <span class="glyphicon glyphicon-credit-card"></span> EcoDni
+            </a>
+        </li>
+        <li>
+            <a href="#" id="link-ayuda">
+                <span class="glyphicon glyphicon-question-sign"></span> Ayuda
+            </a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="#"><span id="username">Invitado</span>: <span><strong class="user-points">0</strong>pts.</span></a>
+        </li>
+        <li>
+            <a class="navbar-brand" href="#"><img class="img-avatar-user" width="30" height="33"
+                                                  src="/images/avatar-user.png"></a>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="glyphicon glyphicon-th green"></span>&nbsp;<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    <a role="menuitem" tabindex="-1" class="trigger sound-control">
+                        Sonido <span class="glyphicon glyphicon-volume-up"></span>
+                    </a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li>
+                    <a role="menuitem" tabindex="-1" href="/">
+                        Salir <span class="glyphicon glyphicon-arrow-right red"></span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div id="game"></div>
+<p class="text-right"><strong class="blue">Versión demo</strong>&nbsp;&nbsp;</p>
+
+<div id="status-game" style="display:none;">
+    Nivel: Aprendis de Superhéroe
+    <hr>
+    <h4>Puntaje</h4>
+    3050 pts.
+    <hr>
+    <h4>Insignias ganadas</h4>
+    105 <img class="img-insignia" src="/images/green-insignia.png">
+    10 <img class="img-insignia" src="/images/green-insignia.png">
+    5 <img class="img-insignia" src="/images/green-insignia.png">
+</div>
+
+<div id="templates">
+    <div id="avatar-selector">
+        <div class="avatar-selector">
+            <table class="content">
+                <tr>
+                    <td>
+                        <div class="avatar avatar-nene trigger selected" data-avatar="avatar_nene"></div>
+                    </td>
+                    <td>
+                        <div class="name-selector">
+                            <div class="name-input">
+                                <input type="text" name="name" maxlength="12" value="">
+                            </div>
+                            <div class="btn-play trigger"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="avatar avatar-nena trigger" data-avatar="avatar_nena"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="tip-luz">
+        <div class="tip-luz">
+            <div class="alert alert-warning tip">
+                <a class="close trigger" aria-hidden="true">&times;</a>
+
+                <h3>Luz</h3>
+                Cuando salgas de una habitación y quede desocupada apaga las luces.<br>
+                Tener la luz encendida sin necesidad, genera desperdicio y contaminación.<br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="tip-ducha">
+        <div class="tip-ducha">
+            <div class="alert alert-info tip">
+                <a class="close trigger" aria-hidden="true">&times;</a>
+
+                <h3>Ducharse</h3>
+                Cuando estés en la ducha no juegues con el agua. Bañarse dejando correr el agua puede hacerte
+                desperdiciar hasta
+                100 litros cada 5 minutos.<br>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div id="chat-window">
+        <div class="chat-window">
+            <div class="emoticons clearfix">
+                <ul>
+                    <li class="trigger emoticon" data-emoticon="emoticon-1"></li>
+                    <li class="trigger emoticon" data-emoticon="emoticon-2"></li>
+                    <li class="trigger emoticon" data-emoticon="emoticon-3"></li>
+                    <li class="trigger emoticon" data-emoticon="emoticon-4"></li>
+                    <li class="trigger emoticon" data-emoticon="emoticon-5"></li>
+                    <li class="trigger emoticon" data-emoticon="emoticon-6"></li>
+                </ul>
+            </div>
+            <div class="controls">
+                <input type="text" name="chat" value="" maxlength="64">
+
+                <div class="btn-submit trigger"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="memotest-content">
+
+        <div id="memotest"><span class="closeMemotest glyphicon glyphicon-remove red" style="cursor:pointer;"></span>
+
+            <div id="mesa"></div>
+            <div id="jugarMemotest" class="trigger">jugar</div>
+        </div>
+    </div>
+
+    <div id="popover-help">
+        <div id="help-content">
+            <p>
+                <strong><span class="glyphicon glyphicon-ok green"></span> ¿En dónde veo mi puntaje?</strong><br>
+                Podrás ver tu puntaje en la parte superior derecha de tu pantalla. Para ver el puntaje general ve a
+                la parte superior izquierda y selecciona "Ranking"
+            </p>
+
+            <p>
+                <strong><span class="glyphicon glyphicon-ok green"></span> ¿Cómo puedo leer y escuchar los tips en
+                    el juego?</strong><br>
+                Dentro de los escenarios habrán elementos iluminados con amarillo, picando sobre ellos podrás
+                leerlos y escucharlos.
+            </p>
+
+            <p>
+                <strong><span class="glyphicon glyphicon-ok green"></span> ¿Cómo puedo entrar a los mini
+                    juegos?</strong><br>
+                Encuentra elementos iluminados con amarillo en todos los escenarios. Picando sobre ellos accederás
+                de inmediato a los mini juegos.
+            </p>
+
+            <p>
+                <strong><span class="glyphicon glyphicon-ok green"></span> ¿Cómo puedo chatear con otros
+                    niños?</strong><br>
+                En la parte inferior de la pantalla encontrarás un globo de diálogo, picando en el podrás enviar un
+                mensaje visible para todos los jugadores visibles en ese momento.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('.dropdown-toggle').dropdown();
+
+        var options = {placement: 'bottom', html: true, title: '', content: ''};
+
+        //ECODNI
+        var ecodniOptions = options;
+        ecodniOptions.content = '<img class="img-eco-dni" width="450" height="333" src="/images/eco-dni.png">';
+
+        $('#link-ecodni').popover(ecodniOptions);
+
+        $('#link-ecodni').on('click', function (e) {
+            e.preventDefault();
+            $('#link-ranking').popover('hide');
+            $('#link-ayuda').popover('hide');
+        });
+
+        //AYUDA
+        var ayudaOptions = options;
+        ayudaOptions.title = 'Ayuda';
+        ayudaOptions.content = $('#popover-help').html();
+
+        $('#link-ayuda').popover(ayudaOptions);
+
+        $('#link-ayuda').on('click', function (e) {
+            e.preventDefault();
+            $('#link-ranking').popover('hide');
+            $('#link-ecodni').popover('hide');
+        });
+
+        //RANKING
+        var rankingOptions = options;
+        rankingOptions.title = "Ranking de usuarios"
+        rankingOptions.content = '<div class="item-ranking"><strong>1- </strong>Jorgec <span class="points-ranking">500.210</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>2- </strong>Sebastian <span class="points-ranking">400.050</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>3- </strong>Vivi <span class="points-ranking">399.400</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>4- </strong>Fede <span class="points-ranking">385.000</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>5- </strong>Diego <span class="points-ranking">373.040</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>6- </strong>Lucasv <span class="points-ranking">240.140</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>7- </strong>Maxi <span class="points-ranking">201.300</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>8- </strong>Nano <span class="points-ranking">199.204</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>9- </strong>Mauri <span class="points-ranking">180.000</span> pts.</div>';
+        rankingOptions.content += '<div class="item-ranking"><strong>10- </strong>Agus <span class="points-ranking">179.000</span> pts.</div>';
+
+        $('#link-ranking').popover(ecodniOptions);
+
+        $('#link-ranking').on('click', function (e) {
+            e.preventDefault();
+            $('#link-ecodni').popover('hide');
+            $('#link-ayuda').popover('hide');
+        });
+
+    });
+</script>
